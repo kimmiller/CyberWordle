@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybersecurity Wordle Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wordle_colors.css">
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        let wordData = {};
+        let targetWord = "";
+        let clue = "";
+        let tip = "";
+
+        async function loadWord() {
+            const response = await fetch('daily_words.json');
+            const data = await response.json();
+            wordData = data[today];
+            if (wordData) {
+                targetWord = wordData.word.toLowerCase();
+                clue = wordData.clue;
+                tip = wordData.tip;
+                document.getElementById('clue').textContent = "Clue: " + clue;
+                document.getElementById('tip').textContent = "Tip: " + tip;
+            } else {
+                document.getElementById('clue').textContent = "No word available for today.";
+            }
+        }
+
+        function evaluateGuess() {
+            const input = document.getElementById('guess');
+            const guess = input.value.toLowerCase();
+            if (guess.length !== targetWord.length) {
+                alert("Guess must be " + targetWord.length + " letters.");
+                return;
+            }
+            const resultRow = document.createElement('div');
+            for (let i = 0; i < guess.length; i++) {
+                const box = document.createElement('span');
+                box.textContent = guess[i].toUpperCase();
+                box.style.padding = "0.5em";
+                box.style.margin = "0.2em";
+                box.style.border = "1px solid #ccc";
+                box.style.display = "inline-block";
+                if (guess[i] === targetWord[i]) {
+                    box.style.backgroundColor = "green";
+                    box.style.color = "white";
+                } else if (targetWord.includes(guess[i])) {
+                    box.style.backgroundColor = "orange";
+                    box.style.color = "white";
+                } else {
+                    box.style.backgroundColor = "gray";
+                    box.style.color = "white";
+                }
+                resultRow.appendChild(box);
+            }
+            document.getElementById('results').appendChild(resultRow);
+            input.value = "";
+        }
+
+        window.onload = loadWord;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Wordle</h1>
+        <h2>UW–Madison</h2>
+    </header>
+    <main>
+        <p id="clue"></p>
+        <p id="tip"></p>
+        <input type="text" id="guess" aria-label="Enter your guess" />
+        <button onclick="evaluateGuess()">Submit</button>
+        <div id="results" aria-live="polite"></div>
+    </main>
+    <footer>
+        &copy; 2025 University of Wisconsin–Madison. All rights reserved.
+    </footer>
+</body>
+</html>
