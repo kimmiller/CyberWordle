@@ -1,17 +1,162 @@
-{
-    "2025-09-30": {
-        "word": "phish",
-        "clue": "A deceptive attempt to obtain sensitive information.",
-        "tip": "Always verify email senders before clicking links."
-    },
-    "2025-10-01": {
-        "word": "patch",
-        "clue": "A software update that fixes vulnerabilities.",
-        "tip": "Keep your systems updated to stay secure."
-    },
-    "2025-10-02": {
-        "word": "token",
-        "clue": "Used in multi-factor authentication.",
-        "tip": "Enable MFA wherever possible."
-    }
-}
+[
+  {
+    "word": "phish",
+    "clue": "A deceptive email tactic",
+    "tip": "Never click suspicious links."
+  },
+  {
+    "word": "patch",
+    "clue": "Software update to fix vulnerabilities",
+    "tip": "Keep your software up to date."
+  },
+  {
+    "word": "token",
+    "clue": "Used in multi-factor authentication",
+    "tip": "Enable MFA wherever possible."
+  },
+  {
+    "word": "virus",
+    "clue": "Malicious code that replicates",
+    "tip": "Use antivirus software."
+  },
+  {
+    "word": "admin",
+    "clue": "High-level access account",
+    "tip": "Limit use of admin privileges."
+  },
+  {
+    "word": "https",
+    "clue": "Secure web protocol",
+    "tip": "Look for HTTPS before entering credentials."
+  },
+  {
+    "word": "alert",
+    "clue": "Notification of suspicious activity",
+    "tip": "Respond promptly to security alerts."
+  },
+  {
+    "word": "proxy",
+    "clue": "Intermediary server for requests",
+    "tip": "Use proxies to protect identity."
+  },
+  {
+    "word": "audit",
+    "clue": "Review of security controls",
+    "tip": "Conduct regular security audits."
+  },
+  {
+    "word": "input",
+    "clue": "User-provided data",
+    "tip": "Validate all user inputs."
+  },
+  {
+    "word": "spoof",
+    "clue": "Impersonation of a trusted source",
+    "tip": "Verify sender identity."
+  },
+  {
+    "word": "trust",
+    "clue": "Zero ___ model",
+    "tip": "Never trust, always verify."
+  },
+  {
+    "word": "risky",
+    "clue": "High likelihood of threat",
+    "tip": "Avoid risky behaviors online."
+  },
+  {
+    "word": "click",
+    "clue": "Action that may trigger malware",
+    "tip": "Think before you click."
+  },
+  {
+    "word": "fraud",
+    "clue": "Deceptive financial activity",
+    "tip": "Monitor accounts for fraud."
+  },
+  {
+    "word": "login",
+    "clue": "Access credentials",
+    "tip": "Use strong, unique passwords."
+  },
+  {
+    "word": "alert",
+    "clue": "Security notification",
+    "tip": "Stay alert to unusual activity."
+  },
+  {
+    "word": "trace",
+    "clue": "Track digital activity",
+    "tip": "Logs help trace incidents."
+  },
+  {
+    "word": "guard",
+    "clue": "Protective measure",
+    "tip": "Guard your personal information."
+  },
+  {
+    "word": "block",
+    "clue": "Prevent access",
+    "tip": "Block suspicious IPs."
+  },
+  {
+    "word": "email",
+    "clue": "Common phishing vector",
+    "tip": "Scrutinize unexpected emails."
+  },
+  {
+    "word": "share",
+    "clue": "Distribute information",
+    "tip": "Be cautious with what you share."
+  },
+  {
+    "word": "admin",
+    "clue": "Privileged account",
+    "tip": "Use admin accounts sparingly."
+  },
+  {
+    "word": "token",
+    "clue": "Authentication factor",
+    "tip": "Use secure tokens for access."
+  },
+  {
+    "word": "layer",
+    "clue": "Defense in depth strategy",
+    "tip": "Use multiple layers of security."
+  },
+  {
+    "word": "trust",
+    "clue": "Zero ___ architecture",
+    "tip": "Trust no one by default."
+  },
+  {
+    "word": "alert",
+    "clue": "Security warning",
+    "tip": "Act on alerts quickly."
+  },
+  {
+    "word": "audit",
+    "clue": "Security review",
+    "tip": "Audit systems regularly."
+  },
+  {
+    "word": "input",
+    "clue": "User data entry",
+    "tip": "Sanitize inputs to prevent injection."
+  },
+  {
+    "word": "click",
+    "clue": "Mouse action",
+    "tip": "Hover before you click."
+  },
+  {
+    "word": "fraud",
+    "clue": "Financial deception",
+    "tip": "Report fraud immediately."
+  },
+  {
+    "word": "guard",
+    "clue": "Protective role",
+    "tip": "Guard against social engineering."
+  }
+]
